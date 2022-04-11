@@ -1,0 +1,24 @@
+{
+  "name": "starbuck_korea_2022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0seo8/starbuck_korea_2022.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0seo8/starbuck_korea_2022/issues"
+  },
+  "homepage": "https://github.com/0seo8/starbuck_korea_2022#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
