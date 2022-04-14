@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/0seo8/starbuck_korea_2022#readme",
   "dependencies": {
+    "lodash": "^4.17.21",
     "parcel-bundler": "^1.12.5"
   }
 }

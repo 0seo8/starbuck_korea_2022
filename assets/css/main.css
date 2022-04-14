@@ -7,9 +7,14 @@ body {
   color: #333;
 }
 
+body {
+  height: 10000px;
+}
+
 header {
   position: fixed;
   background-color: #f6f5ef;
+  border-bottom: 1px solid #c8c8c8;
   height: 120px;
   width: 100%;
   z-index: 7;
@@ -161,10 +166,15 @@ header .main-menu .item:hover .item__name {
   border-radius: 6px 6px 0 0;
 }
 
+header .main-menu .item:hover .item__content {
+  display: block;
+}
+
 header .main-menu .item .item__content {
   position: fixed;
   width: 100%;
   right: 0;
+  display: none;
 }
 
 header .main-menu .item .item__content .contents__menu {
@@ -213,6 +223,24 @@ header .main-menu .item .item__content .contents__texture h4 {
 header .main-menu .item .item__content .contents__texture p {
   color: #669900;
   margin: 4px 0 14px;
+}
+
+header .badges {
+  position: absolute;
+  top: 132px;
+  right: 12px;
+}
+
+header .badges .badge {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+header .badges .badge img {
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 *, *::before, *::after {
