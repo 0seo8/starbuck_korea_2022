@@ -1,0 +1,7 @@
+@mixin bg-img ($bg-url, $bg-position: center, $bg-size: contain, $bg-color: transparent){ 
+  background-image: url($bg-url);
+  background-repeat: no-repeat;
+  background-position: $bg-position;
+  background-size: $bg-size;
+  background-color: $bg-color;
+}

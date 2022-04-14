@@ -1,5 +1,6 @@
-body {
-  font-family: 'Nanum Gothic', sans-serif;
-  font-size: 1em;
-  line-height: 1;
-}
+@import './abstracts/mixin_common';
+@import './abstracts/variables';
+
+@import './components/header';
+
+@import './pages/common';

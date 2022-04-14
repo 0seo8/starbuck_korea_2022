@@ -1,0 +1,25 @@
+/* Color styles */
+$color-black: #000;
+$color-black-200: #333;
+$color-black-300: #2C2A29;
+$color-white: #FFFFFF;
+$color-white-200: #f6f5ef;
+$color-gary-100: #e5e5e5;
+$color-gray-200: #ccc;
+$color-gray-300: #999;
+$color-gray-400: #777;
+$color-gray-500: #656565;
+$color-green-500: #669900;
+
+
+$base-size : 10px;
+$font-family: 'Nanum Gothic', sans-serif;
+
+
+html {
+  font-size: $base-size;
+}
+
+body {
+  color: $color-black-200;
+}
