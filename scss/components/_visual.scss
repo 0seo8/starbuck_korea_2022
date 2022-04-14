@@ -1,0 +1,52 @@
+.visual {
+  background-image: url('https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Summer1_main_bg.jpg');
+  background-position: center;
+  padding-top: 120px;
+  position: relative;
+
+  .fade-in {
+    opacity: 0;
+  }
+
+  .inner {
+    height: 646px;
+  }
+
+  .title {
+    position: absolute;
+    top: 7.1%;
+    left: 44px;
+
+    .btn {
+      position: absolute;
+      bottom: -39%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+    }
+  }
+
+  .cup1.image {
+    position: absolute;
+    top: 11.8%;
+    left: 35.7%;
+    width: 48.7%;
+    max-width: 548px;
+  }
+
+  .cup2.image {
+    position: absolute;
+    top: 33.5%;
+    left: 19.6%;
+    width: 41.5%;
+    max-width: 468px;
+  }
+
+  .cup3.image {
+    position: absolute;
+    top: 15.6%;
+    right: -8%;
+    width: 26.9%;
+    max-width: 302px;
+  }
+}

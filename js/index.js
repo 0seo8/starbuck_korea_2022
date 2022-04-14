@@ -1,6 +1,7 @@
 const $input = document.querySelector('.sub-menu input[type=text]');
 const $searchIcon = document.querySelector('.sub-menu .material-icons');
 const $badgeEl = document.querySelector('.badges');
+const $fadeEls = document.querySelectorAll('.visual .fade-in');
 
 
 $searchIcon.addEventListener('click', () => {
@@ -32,3 +33,11 @@ window.addEventListener('scroll', _.throttle(function () {
     });
   }
 }, 300));
+
+
+$fadeEls.forEach(function ($fadeEl, index) {
+  gsap.to($fadeEl, 1, {
+    delay: (index+1) * .7,    //=> 0.7초 / 1.4초 / 2.1초 / 2.8초 순으로 지연이 됨.
+    opacity: 1
+  });
+});
