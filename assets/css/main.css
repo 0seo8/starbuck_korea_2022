@@ -586,14 +586,14 @@ header .badges .badge img {
   content: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/reserve_2022_indonesia_leaf1.png);
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -2%;
 }
 
 .reserve-coffee .reverse__visual::after {
   content: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/reserve_2022_indonesia_leaf2.png);
   position: absolute;
   right: 0;
-  bottom: -1%;
+  bottom: -2%;
 }
 
 .reserve-coffee .btn-area {
@@ -606,6 +606,49 @@ header .badges .badge img {
   padding-left: 254px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.pick-your-favorite {
+  position: relative;
+  background: url(https://www.starbucks.co.kr/common/img/main/fav_prod_bg_new.jpg) center fixed no-repeat #45434c;
+  background-size: auto 100%;
+  height: 800px;
+  padding: 0;
+}
+
+.pick-your-favorite .inner {
+  padding: 110px 0;
+}
+
+.pick-your-favorite .text-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 362px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.pick-your-favorite .text-group .title {
+  margin-bottom: 40px;
+}
+
+.pick-your-favorite .text-group .description {
+  margin-bottom: 40px;
+}
+
+.pick-your-favorite .fav_img {
+  position: absolute;
+  top: 100px;
+  right: -10px;
+  width: 672px;
+  height: 458px;
+  background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Summer1_pick_img.png);
 }
 
 *, *::before, *::after {
