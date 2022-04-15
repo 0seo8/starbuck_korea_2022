@@ -1,0 +1,47 @@
+.find-store {
+  position: relative;
+  background: url('https://www.starbucks.co.kr/common/img/main/store_bg.jpg');
+  overflow: hidden;
+  .inner {
+    height: 400px;
+    > img {
+      position: absolute;
+    }
+  }
+  .store_exp_img01 {
+    left: 245px;
+    top: 149px;
+    z-index: 2;
+  }
+  .store_exp_img02 {
+    top: 0;
+    left: 30px;
+  }
+  .store_exp_img03 {
+    top: -60px;
+    left: 430px;
+  }
+  .store_exp_img04 {
+    right: -100px;
+    top: 298px;
+  }
+
+  .text-group {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    .title {
+
+    }
+    .description {
+      margin: 15px 0;
+    }
+    .more {
+
+    }
+  }
+
+}
