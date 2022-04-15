@@ -540,6 +540,10 @@ header .badges .badge img {
   margin-top: 36px;
 }
 
+.promotion .promotion__txt {
+  z-index: 2;
+}
+
 .reserve-coffee {
   position: relative;
   width: 100%;
@@ -732,6 +736,138 @@ header .badges .badge img {
   margin: 15px 0;
 }
 
+.find-store .text-group .more {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #2C2A29;
+  padding: 32px 0 35px 0;
+}
+
+footer .inner {
+  width: 1200px;
+}
+
+footer .footer__menu {
+  padding-right: 130px;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer__menu::after {
+  content: url("https://www.starbucks.co.kr/common/img/footer/footer_logo.png");
+  position: absolute;
+  right: -90px;
+}
+
+footer .footer__menu li {
+  margin-bottom: 10px;
+}
+
+footer .footer__menu li.title {
+  margin-bottom: 13px;
+}
+
+footer .footer__awards {
+  height: 80px;
+  margin-top: 40px;
+  background-color: #282828;
+}
+
+footer .footer__awards ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer__awards ul li {
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .footer__notice {
+  color: #ccc;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+footer .footer__notice .menu {
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer__notice .menu li {
+  padding: 0 10px;
+  white-space: nowrap;
+  border-right: 1px solid;
+}
+
+footer .footer__notice .menu li:last-child {
+  border: none;
+}
+
+footer .footer__notice .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer__notice .btn-group .btn {
+  width: 100px;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  color: #ccc;
+  border-color: #ccc;
+  margin: 10px 2px 0 3px;
+}
+
+footer .info {
+  color: #999;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -844,4 +980,47 @@ a img {
   color: #fff;
   background-color: #d73a7a;
   text-decoration: underline;
+}
+
+/*BACK TO POSITION*/
+.back-to-position {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.back-to-position.to-right {
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
+}
+
+.back-to-position.to-left {
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
+}
+
+.show .back-to-position {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.show .back-to-position.delay-0 {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.show .back-to-position.delay-1 {
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.show .back-to-position.delay-2 {
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+}
+
+.show .back-to-position.delay-3 {
+  -webkit-transition-delay: .9s;
+          transition-delay: .9s;
 }
