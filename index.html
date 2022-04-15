@@ -36,9 +36,19 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <link rel="stylesheet" href="./assets/css/main.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+  <!--GSAP & ScrollToPlugin-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <!--ScrollMagic-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <!--Lodash-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+  
+  <script defer src="./js/youtube.js"></script>
   <script type="module" defer src="./js/index.js"></script>
 </head>
 
@@ -377,38 +387,148 @@
     <!--BADGES-->
     <div class="badges">
       <div class="badge">
-        <img src="https://image.istarbucks.co.kr/upload/banner/floatingbnr/WIP8gI_20220412094131003.png" alt="Find Yout Taste, 좋아하는 걸 좋아해" />
+        <img src="https://image.istarbucks.co.kr/upload/banner/floatingbnr/WIP8gI_20220412094131003.png"
+          alt="Find Yout Taste, 좋아하는 걸 좋아해" />
       </div>
       <div class="badge">
-        <img src="https://image.istarbucks.co.kr/upload/banner/floatingbnr/5vBa7F_20220331095015399.png" alt="PLCC 스타벅스 현대카드 4월 프로모션" />
+        <img src="https://image.istarbucks.co.kr/upload/banner/floatingbnr/5vBa7F_20220331095015399.png"
+          alt="PLCC 스타벅스 현대카드 4월 프로모션" />
       </div>
     </div>
 
   </header>
 
-    <!--VISUAL-->
-    <section class="visual">
-      <div class="inner">
-  
-        <div class="title fade-in">
-          <img src="https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Summer1_main_slogun.png" alt="FIND YOUR TASTE" />
-          <a href="javascript:void(0)" class="btn btn--pink">자세히 보기</a>
-        </div>
-        <div class="fade-in">
-          <img src="https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Summer1_main_rollinmint.png" alt="롤린 민트 초코 콜드 브루" class="cup1 image" />
-          <!-- <img src="https://image.istarbucks.co.kr/upload/common/img/main/2022/m_2022_Summer1_main_rollinmint.png" alt="롤린 민트 초코 콜드 브루" class="cup1 text" /> -->
-        </div>
-        <div class="fade-in">
-          <img src="https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Summer1_main_punchgraffiti3.png" alt="펀치 그래피티 블렌디드" class="cup2 image" />
-          <!-- <img src="https://image.istarbucks.co.kr/upload/common/img/main/2022/m_2022_Summer1_main_punchgraffiti2.png" alt="펀치 그래피티 블렌디드" class="cup2 text" /> -->
-        </div>
-        <div class="fade-in">
-          <img src="https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Summer1_main_pomeloflow.png" alt="포멜로 플로우 그린 티" class="cup3 image" />
-          <!-- <img src="https://image.istarbucks.co.kr/upload/common/img/main/2022/m_2022_Summer1_main_pomeloflow.png" alt="펀치 그래피티 블렌디드" class="cup2 text" /> -->
-        </div>
-  
+  <!--VISUAL-->
+  <section class="visual">
+    <div class="inner">
+
+      <div class="title fade-in">
+        <img src="https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Summer1_main_slogun.png"
+          alt="FIND YOUR TASTE" />
+        <a href="javascript:void(0)" class="btn btn--pink">자세히 보기</a>
       </div>
-    </section>
+      <div class="fade-in">
+        <img src="https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Summer1_main_rollinmint.png"
+          alt="롤린 민트 초코 콜드 브루" class="cup1 image" />
+        <!-- <img src="https://image.istarbucks.co.kr/upload/common/img/main/2022/m_2022_Summer1_main_rollinmint.png" alt="롤린 민트 초코 콜드 브루" class="cup1 text" /> -->
+      </div>
+      <div class="fade-in">
+        <img src="https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Summer1_main_punchgraffiti3.png"
+          alt="펀치 그래피티 블렌디드" class="cup2 image" />
+        <!-- <img src="https://image.istarbucks.co.kr/upload/common/img/main/2022/m_2022_Summer1_main_punchgraffiti2.png" alt="펀치 그래피티 블렌디드" class="cup2 text" /> -->
+      </div>
+      <div class="fade-in">
+        <img src="https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Summer1_main_pomeloflow.png"
+          alt="포멜로 플로우 그린 티" class="cup3 image" />
+        <!-- <img src="https://image.istarbucks.co.kr/upload/common/img/main/2022/m_2022_Summer1_main_pomeloflow.png" alt="펀치 그래피티 블렌디드" class="cup2 text" /> -->
+      </div>
+
+    </div>
+  </section>
+
+  <!--NOTICE-->
+  <section class="notice">
+    <!--NOTICE LINE-->
+    <div class="notice-line">
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+      <div class="inner">
+
+        <div class="inner__left">
+          <h2>공지사항</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">시스템 개선 및 점검 안내</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">스타벅스 카드 유효기간 관련 안내</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">사이렌 오더/딜리버스 음료 기본 설정 변경 안내 (HOT → ICED)</a>
+              </div>
+            </div>
+          </div>
+          <span>
+            <a href="javascript:void(0)" class=more_btn" title="공지사항 더보기">
+              <img src="https://www.starbucks.co.kr/common/img/common/btn_notice_plus.png" alt="공지사항 더보기 버튼">
+            </a>
+          </pan>
+        </div>
+
+        <div class="inner__right">
+          <h2>스타벅스 프로모션</h2>
+          <span class="toggle_btn">
+            <img src="https://image.istarbucks.co.kr/common/img/common/btn_prom_down.png" alt="스타벅스 프로모션 펼쳐보기">
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- New REWARD -->
+  <section class="new-reward">
+    <div class="inner">
+      <div class="reword-logo">
+        <img src="https://image.istarbucks.co.kr/common/img/main/rewards-logo.png" alt="Starbucks Rewards" width="176">      
+      </div>
+        <div class="contents__top">
+          <div class="top__txt">
+            <h2>스타벅스만의 특별한 혜택,</h2>
+            <span>스타벅스 리워드</span>
+            <p><span>스타벅스 회원이세요?</span> 로그인을 통해 나만의 리워드를 확인해보세요.</p>
+            <p><span>스타벅스 회원이세요?</span> 가입을 통해 리워드 혜택을 즐기세요.</p>
+          </div>
+          <div class="top__btn">
+            <a href="javascript:void(0)" class="btn btn--green">회원가입</a>
+            <a href="javascript:void(0)" class="btn btn--white">로그인</a>
+          </div>
+        </div>
+        <div class="contents__bottom">
+          <div class="bottom__txt">
+            <p> 
+              회원 가입 후, 스타벅스 e-Gift Card를 
+            <span>"나에게 선물하기"로 구매하시고, 편리하게 등록하세요!</span></p>
+            <p>카드를 등록하여 스타벅스 리워드 회원이 되신 후, 첫 구매를 하시면 무료 음료쿠폰을 드립니다!
+          </p>
+          </div>
+          <div class="bottom__btn">
+            <a href="javascript:void(0)" class="btn btn--white">e-Gift Card 선물하기</a>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!--SEASEN PROMOTION -->
+  <section class="promotion">
+    <div class="inner">
+      <div class="fade-in">
+        <img src="https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Summer1_bean_bean.png" alt="술라웨시 토라자 250g" class="pc-bean">   
+      </div>
+
+      <div class="promotion__txt fade-in">
+        <img src="https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Summer1_bean_text.png" alt="블랙 세서미의 고소한 풍미와 마쉬멜로의 끝맛이 조화로운 시즌 한정 원두를 만나보세요." class="pc-bean-txt">
+        <a href="javascript:void(0)" class="btn">자세히보기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVE COFFEE -->
+  <section class="reserve-coffee">
+    <div class="inner">
+      <div class="reserve__title">
+        <img src="https://image.istarbucks.co.kr/img/event/2022/reserve_2022_indonesia_title.png" alt="INDONESIA WEST JAVA" class="reserve_visual-pc">
+      </div>
+      
+      <div class="reverse__visual">
+        <img src="https://image.istarbucks.co.kr/upload/common/img/main/2022/reserve_2022_indonesia_visual3.png" class="visual3" >      
+      </div>
+      <div class="btn-area">
+        <a href="javascript:void(0)" class="btn btn--gold">자세히보기</a>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>

@@ -1,0 +1,63 @@
+.reserve-coffee {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url(https://image.istarbucks.co.kr/img/event/2022/reserve_2022_indonesia_visual_bg.jpg) no-repeat center top;
+  background-size: cover;
+  overflow: hidden;
+
+  .inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 100vw;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .reserve__title {
+    position: relative;
+    padding-top: 115px;
+    max-width: 1080px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reverse__visual {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+
+    .visual3 {
+      position: absolute;
+      right: 50%;
+      transform: translateX(50%);
+    }
+    &::before {
+      content: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/reserve_2022_indonesia_leaf1.png);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  
+    &::after {
+      content: url(https://image.istarbucks.co.kr/upload/common/img/main/2022/reserve_2022_indonesia_leaf2.png);
+      position: absolute;
+      right: 0;
+      bottom: -1%;
+    }
+  }
+  .btn-area {
+    position: relative;
+    z-index: 10;
+    max-width: 1080px;
+    margin-top: 39px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 254px;
+    box-sizing: border-box;
+  }
+}

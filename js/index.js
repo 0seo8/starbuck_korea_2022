@@ -2,7 +2,7 @@ const $input = document.querySelector('.sub-menu input[type=text]');
 const $searchIcon = document.querySelector('.sub-menu .material-icons');
 const $badgeEl = document.querySelector('.badges');
 const $fadeEls = document.querySelectorAll('.visual .fade-in');
-
+const $promotionEls = document.querySelectorAll('.promotion .fade-in')
 
 $searchIcon.addEventListener('click', () => {
   $input.focus()
@@ -41,3 +41,16 @@ $fadeEls.forEach(function ($fadeEl, index) {
     opacity: 1
   });
 });
+
+new Swiper('.notice-line .swiper-container', {
+  direction: 'vertical', // 수직 슬라이드
+  autoplay: true, // 자동 재생 여부
+  loop: true // 반복 재생 여부
+});
+
+$promotionEls.forEach(function($promotionEl, index) {
+  gsap.to($promotionEl, 1, {
+    delay: .7,
+    opacity: 1
+  })
+})

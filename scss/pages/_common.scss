@@ -11,6 +11,7 @@ body {
 
 img {
   display: block;
+  width: auto;
 }
 
 a {
@@ -28,28 +29,30 @@ a img {
 .inner {
   margin-right: auto;
   margin-left: auto;
-  width: 1100px;
+  max-width: 1100px;
   position: relative;
 }
 
 /*BUTTON*/
 .btn {
   width: 130px;
-  padding: 10px;
-  border: 2px solid #333;
+  padding: 8px;
+  border: 2px solid #1e245c;
   border-radius: 4px;
-  color: #333;
-  font-size: 16px;
+  color: #1e245c;
+  font-size: 14px;
   font-weight: 700;
   text-align: center;
   cursor: pointer;
   box-sizing: border-box;
   display: block;
   transition: .4s;
+  z-index: 2;
 }
 .btn:hover {
-  background-color: #333;
+  background-color: #1e245c;
   color: #FFF;
+  text-decoration: underline;
 }
 .btn.btn--reverse {
   background-color: #333;
@@ -59,13 +62,16 @@ a img {
   background-color: transparent;
   color: #333;
 }
-.btn.btn--brown {
-  color: #592B18;
-  border-color: #592B18;
-}
-.btn.btn--brown:hover {
+.btn.btn--green:hover {
   color: #FFF;
-  background-color: #592B18;
+  text-decoration: underline;
+
+}
+.btn.btn--green {
+  color: #FFF;
+  width: 92px;
+  background-color: #00704a;
+  border-color: #00704a;
 }
 .btn.btn--gold {
   color: #D9AA8A;
@@ -74,7 +80,10 @@ a img {
 .btn.btn--gold:hover {
   color: #FFF;
   background-color: #D9AA8A;
+  text-decoration: underline;
+
 }
+
 .btn.btn--white {
   color: #FFF;
   border-color: #FFF;
@@ -92,4 +101,5 @@ a img {
 .btn.btn--pink:hover {
   color: #fff;
   background-color: #d73a7a;
+  text-decoration: underline;
 }
