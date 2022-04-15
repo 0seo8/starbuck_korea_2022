@@ -37,7 +37,7 @@ a img {
 .btn {
   width: 130px;
   padding: 8px;
-  border: 2px solid #1e245c;
+  border: 2px solid ;
   border-radius: 4px;
   color: #1e245c;
   font-size: 14px;
@@ -54,13 +54,13 @@ a img {
   color: #FFF;
   text-decoration: underline;
 }
-.btn.btn--reverse {
-  background-color: #333;
-  color: #FFF;
-}
-.btn.btn--reverse:hover {
+.btn.btn--black {
   background-color: transparent;
   color: #333;
+}
+.btn.btn--black:hover {
+  background-color: #333;
+  color: #FFF;
 }
 .btn.btn--green:hover {
   color: #FFF;

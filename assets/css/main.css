@@ -740,6 +740,11 @@ header .badges .badge img {
   margin-top: 10px;
 }
 
+.find-store .text-group .more a {
+  -webkit-transition: background-color .7s, color .7s;
+  transition: background-color .7s, color .7s;
+}
+
 footer {
   background-color: #2C2A29;
   padding: 32px 0 35px 0;
@@ -907,7 +912,7 @@ a img {
 .btn {
   width: 130px;
   padding: 8px;
-  border: 2px solid #1e245c;
+  border: 2px solid;
   border-radius: 4px;
   color: #1e245c;
   font-size: 14px;
@@ -928,14 +933,14 @@ a img {
   text-decoration: underline;
 }
 
-.btn.btn--reverse {
-  background-color: #333;
-  color: #FFF;
-}
-
-.btn.btn--reverse:hover {
+.btn.btn--black {
   background-color: transparent;
   color: #333;
+}
+
+.btn.btn--black:hover {
+  background-color: #333;
+  color: #FFF;
 }
 
 .btn.btn--green:hover {

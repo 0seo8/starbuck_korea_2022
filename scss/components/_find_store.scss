@@ -39,6 +39,9 @@
     }
     .more {
       margin-top: 10px;
+      a {
+        transition: background-color .7s, color .7s;
+      }
     }
   }
 
