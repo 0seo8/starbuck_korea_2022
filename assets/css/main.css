@@ -14,6 +14,7 @@ header {
   height: 120px;
   width: 100%;
   z-index: 9;
+  margin-bottom: 120px;
 }
 
 header .inner {
@@ -921,6 +922,7 @@ header .badges .badge img {
 footer {
   background-color: #2C2A29;
   padding: 32px 0 35px 0;
+  position: relative;
 }
 
 footer .inner {
@@ -928,6 +930,8 @@ footer .inner {
 }
 
 footer .footer__menu {
+  white-space: nowrap;
+  height: 214px;
   padding-right: 130px;
   color: #FFFFFF;
   font-size: 1.2rem;
@@ -1211,4 +1215,8 @@ a img {
 .show .back-to-position.delay-3 {
   -webkit-transition-delay: .9s;
           transition-delay: .9s;
+}
+
+.main-container {
+  padding-top: 120px;
 }
