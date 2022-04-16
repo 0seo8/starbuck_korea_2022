@@ -15,6 +15,10 @@
       top: 0;
       bottom: 0;
       margin: auto;
+      img {
+        max-width: 100%;
+        vertical-align: top;
+      }
     }
 
     .contents__top {
@@ -63,17 +67,20 @@
     .contents__bottom {
       display: flex;
       position: relative;
+      align-items: center;
 
       .bottom__txt {
         font-size: 1.4rem;
-        line-height: 1.4;
+        line-height: 2;
+        height: 40px;
+        flex-grow: 1;
         span {
           font-weight: 700;
         }
       }
 
       .bottom__btn {
-        position: absolute;
+        // position: absolute;
         right: 0;
         bottom: 10px;
 
